@@ -1,0 +1,10 @@
+<!-- pemanggilan template nya yang akan digunakan -->
+{{ template "layout" .}}
+<!-- definisi bagian nya -->
+{{ define "main" }}
+
+<div class="text">
+    Product with ID : {{ .content }}
+</div>
+
+{{ end }}
