@@ -31,6 +31,10 @@ func main() {
 		w.Write([]byte("Profile Page"))
 	})
 
+	// loading static files (js, css, or anything)
+	fileServer := http.FileServer(http.Dir("assets"))
+	mux.Handle("/static/", http.StripPrefix("/static/", fileServer))
+
 	log.Println("Starting web on port 8080")
 
 	// serving web pada port 8080

@@ -35,13 +35,13 @@ func HomeHandler(w http.ResponseWriter, r *http.Request) {
 			ID : 1,
 			Name : "Mobilio",
 			Price : 220000000,
-			Stock : 3,
+			Stock : 11,
 		},
 		{
 			ID : 2,
 			Name : "Xpander",
 			Price : 270000000,
-			Stock : 2,
+			Stock : 8,
 		},
 		{
 			ID : 3,

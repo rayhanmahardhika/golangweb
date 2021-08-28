@@ -5,8 +5,9 @@
 
 <!-- menggunakan iterasi karena data yang dilempar adalah slices (array) -->
 {{ range . }}
-    <div class="text">
-        {{ .Name }}
+    <div class="text box-with-shadow">
+        <!-- pemanggilan atribut dan method dari struct -->
+        {{ .Name }} - {{ .Price }} - {{ .StockStatus }} 
     </div>
 {{ end }}
 
